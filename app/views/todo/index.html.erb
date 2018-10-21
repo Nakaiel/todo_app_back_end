@@ -8,8 +8,8 @@
     <% @todos.each do |todo| %>
      <li> 
      <input type="checkbox" checked="checked"> 
-     <a href="show/<%= todo.id %>"><%= todo.description %></a> 
-     <span class="pomodoro-estimate"><% todo.pomodoro_estimate %></span>
+     <a href="/todo/show/<%= todo.id %>"><%= todo.description %></a> 
+     <span class="pomodoro-estimate"><%= todo.pomodoro_estimate %> pomodoros</span>
      </li>
      <% end %>
 </ol>
